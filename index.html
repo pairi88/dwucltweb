@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWU Center for Learning & Teaching</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-10 w-auto" src="images/dwu-logo.png" alt="DWU Logo">
+                        <span class="ml-2 text-xl font-bold text-blue-900">DWU Center for Learning & Teaching</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="text-blue-900 hover:text-blue-700 px-3 py-2 font-medium">Home</a>
+                    <a href="#about" class="text-blue-900 hover:text-blue-700 px-3 py-2 font-medium">About</a>
+                    <a href="#services" class="text-blue-900 hover:text-blue-700 px-3 py-2 font-medium">Services</a>
+                    <a href="#resources" class="text-blue-900 hover:text-blue-700 px-3 py-2 font-medium">Resources</a>
+                    <a href="#contact" class="text-blue-900 hover:text-blue-700 px-3 py-2 font-medium">Contact</a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-blue-900 hover:text-blue-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden bg-white shadow-lg" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-blue-900 hover:text-blue-700 block px-3 py-2 font-medium">Home</a>
+                <a href="#about" class="text-blue-900 hover:text-blue-700 block px-3 py-2 font-medium">About</a>
+                <a href="#services" class="text-blue-900 hover:text-blue-700 block px-3 py-2 font-medium">Services</a>
+                <a href="#resources" class="text-blue-900 hover:text-blue-700 block px-3 py-2 font-medium">Resources</a>
+                <a href="#contact" class="text-blue-900 hover:text-blue-700 block px-3 py-2 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">DWU Center for Learning & Teaching</h1>
+                    <p class="text-xl mb-8">Empowering academic excellence through innovative teaching strategies and comprehensive learning support for both staff and students.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#services" class="bg-white text-blue-900 hover:bg-blue-100 font-bold py-3 px-6 rounded-lg text-center transition-all">Explore Services</a>
+                        <a href="#contact" class="border-2 border-white hover:bg-white hover:text-blue-900 font-bold py-3 px-6 rounded-lg text-center transition-all">Contact Us</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="images/img-1.jpg" alt="Students learning" class="rounded-lg shadow-2xl max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">About Our Center</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="md:flex md:items-center md:space-x-10">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="images/rc-class.jpg" alt="About CLT" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-blue-900 mb-4">Our Mission</h3>
+                    <p class="text-gray-700 mb-6">The DWU Center for Learning & Teaching is dedicated to fostering academic excellence by providing comprehensive support to both faculty and students. We serve as a hub for innovative teaching methodologies, learning resources, and professional development opportunities.</p>
+                    
+                    <h3 class="text-2xl font-semibold text-blue-900 mb-4">Our Vision</h3>
+                    <p class="text-gray-700 mb-6">To be a leading academic support center that transforms teaching and learning experiences through collaboration, innovation, and evidence-based practices.</p>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-blue-900 mb-3">Core Values</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Excellence in teaching and learning</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Innovation and creativity</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Collaboration and community</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-600 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Evidence-based practices</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive support for both faculty and students to enhance teaching and learning experiences</p>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all card-hover">
+                    <div class="bg-blue-600 p-4 text-white">
+                        <i class="fas fa-chalkboard-teacher text-3xl mb-3"></i>
+                        <h3 class="text-xl font-semibold">Faculty Development</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Teaching workshops and seminars</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Mentoring programs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Classroom observation & feedback</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Curriculum design support</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all card-hover">
+                    <div class="bg-blue-700 p-4 text-white">
+                        <i class="fas fa-book-reader text-3xl mb-3"></i>
+                        <h3 class="text-xl font-semibold">Student Learning Support</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Academic skills workshops</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Peer tutoring programs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Study strategy consultations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Writing and research support</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all card-hover">
+                    <div class="bg-blue-800 p-4 text-white">
+                        <i class="fas fa-laptop-code text-3xl mb-3"></i>
+                        <h3 class="text-xl font-semibold">Technology Integration</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Learning management system support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Digital pedagogy training</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Educational technology consultations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Online course development</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Resources</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Access our collection of teaching and learning resources</p>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Resource 1 -->
+                <div class="bg-gray-50 rounded-lg p-6 text-center transition-all hover:bg-blue-50 card-hover">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-file-pdf text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-blue-900 mb-2">Teaching Guides</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive guides for effective teaching strategies</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View Resources <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+                
+                <!-- Resource 2 -->
+                <div class="bg-gray-50 rounded-lg p-6 text-center transition-all hover:bg-blue-50 card-hover">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-video text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-blue-900 mb-2">Instructional Videos</h3>
+                    <p class="text-gray-600 mb-4">Video tutorials on various teaching methodologies</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Watch Videos <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+                
+                <!-- Resource 3 -->
+                <div class="bg-gray-50 rounded-lg p-6 text-center transition-all hover:bg-blue-50 card-hover">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-book text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-blue-900 mb-2">Research Publications</h3>
+                    <p class="text-gray-600 mb-4">Latest research in teaching and learning</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Read Publications <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+                
+                <!-- Resource 4 -->
+                <div class="bg-gray-50 rounded-lg p-6 text-center transition-all hover:bg-blue-50 card-hover">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tools text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-blue-900 mb-2">Teaching Tools</h3>
+                    <p class="text-gray-600 mb-4">Templates and tools for classroom activities</p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Access Tools <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg inline-flex items-center transition-all">
+                    Browse All Resources <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">What People Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Hear from faculty and students about their experiences</p>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-6">
+                        <img src="https://via.placeholder.com/60x60?text=Faculty" alt="Faculty member" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-blue-900">Dr. Sarah Johnson</h4>
+                            <p class="text-gray-600">Associate Professor, Biology</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"The teaching workshops transformed my approach to student engagement. My classroom is now more interactive, and I see better learning outcomes."</p>
+                    <div class="mt-4 text-blue-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-6">
+                        <img src="https://via.placeholder.com/60x60?text=Student" alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-blue-900">Michael Chen</h4>
+                            <p class="text-gray-600">Engineering Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"The academic skills workshops helped me develop effective study strategies. My grades improved significantly after implementing what I learned."</p>
+                    <div class="mt-4 text-blue-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Contact Us</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Get in touch with the Center for Learning & Teaching</p>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="md:flex md:space-x-8">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="bg-blue-50 rounded-lg p-8 h-full">
+                        <h3 class="text-2xl font-semibold text-blue-900 mb-6">Our Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-blue-900 mb-1">Location</h4>
+                                    <p class="text-gray-700">Academic Building, Room 205<br>Divine Word University<br>Port Moresby, Papua New Guinea</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-blue-900 mb-1">Phone</h4>
+                                    <p class="text-gray-700">+675 123 4567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-blue-900 mb-1">Email</h4>
+                                    <p class="text-gray-700">clt@dwu.ac.pg</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-blue-900 mb-1">Hours</h4>
+                                    <p class="text-gray-700">Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 1:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-md p-8">
+                        <h3 class="text-2xl font-semibold text-blue-900 mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all" placeholder="John Doe">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all" placeholder="john@example.com">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                                <select id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all">
+                                    <option value="">Select a subject</option>
+                                    <option value="faculty">Faculty Development Inquiry</option>
+                                    <option value="student">Student Learning Support</option>
+                                    <option value="tech">Technology Integration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all" placeholder="Your message here..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all">
+                                Send Message <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">Stay Updated</h3>
+                    <p class="text-blue-200">Subscribe to our newsletter for the latest teaching resources and workshop announcements.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <form class="flex">
+                        <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-lg focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-r-lg font-medium transition-all">
+                            Subscribe <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">DWU Center for Learning & Teaching</h3>
+                    <p class="text-blue-300">The Center for Learning & Teaching at Divine Word University is committed to academic excellence through innovative teaching and comprehensive learning support.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-blue-300 hover:text-white transition-all">Home</a></li>
+                        <li><a href="#about" class="text-blue-300 hover:text-white transition-all">About</a></li>
+                        <li><a href="#services" class="text-blue-300 hover:text-white transition-all">Services</a></li>
+                        <li><a href="#resources" class="text-blue-300 hover:text-white transition-all">Resources</a></li>
+                        <li><a href="#contact" class="text-blue-300 hover:text-white transition-all">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-blue-300 hover:text-white transition-all">Faculty Development</a></li>
+                        <li><a href="#" class="text-blue-300 hover:text-white transition-all">Student Support</a></li>
+                        <li><a href="#" class="text-blue-300 hover:text-white transition-all">Technology Integration</a></li>
+                        <li><a href="#" class="text-blue-300 hover:text-white transition-all">Workshops</a></li>
+                        <li><a href="#" class="text-blue-300 hover:text-white transition-all">Consultations</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center transition-all">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center transition-all">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center transition-all">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="text-blue-300">
+                        <i class="fas fa-envelope mr-2"></i> clt@dwu.ac.pg<br>
+                        <i class="fas fa-phone-alt mr-2"></i> +675 422 1725<br>
+                        <i class="fas fa-laptop-code mr-2"></i> Live Chat
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-12 pt-8 text-center text-blue-400">
+                <p>&copy; 2025 DWU Center for Learning & Teaching. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+
+
+<script type="text/javascript">
+    (function () {
+        var head = document.getElementsByTagName("head").item(0);
+        var script = document.createElement("script");
+        
+        var src = (document.location.protocol == 'https:' 
+            ? 'https://www.formilla.com/scripts/feedback.js' 
+            : 'http://www.formilla.com/scripts/feedback.js');
+        
+        script.setAttribute("type", "text/javascript"); 
+        script.setAttribute("src", src); script.setAttribute("async", true);        
+
+        var complete = false;
+        
+        script.onload = script.onreadystatechange = function () {
+            if (!complete && (!this.readyState 
+                    || this.readyState == 'loaded' 
+                    || this.readyState == 'complete')) {
+                complete = true;
+                Formilla.guid = 'cs3310a8-e4da-444d-9b22-e47070fdffbb';
+                Formilla.loadWidgets();                
+            }
+        };
+
+        head.appendChild(script);
+    })();
+</script>
+
+</body>
+</html>
